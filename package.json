@@ -1,7 +1,7 @@
 {
-  "name": "confusion",
+  "name": "melearningchinese",
   "version": "1.0.0",
-  "description": "This is a website for Ristorante Con Fusion",
+  "description": "我学习汉语",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
