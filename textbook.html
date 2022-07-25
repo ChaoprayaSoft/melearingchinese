@@ -28,11 +28,11 @@
                     class="img-fluid"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"><span
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span
                                 class="fa fa-house-chimney fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
                                 class="fa-solid fa-question fa-lg"></span> About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./textbook.html"><span class="fa fa-user-pen fa-lg"></span>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-user-pen fa-lg"></span>
                             Textbook</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-file-pen fa-lg"></span> Chinese
                             Character</a></li>
@@ -49,9 +49,8 @@
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Me-Learning-Chinese</h1>
-                    <h1 style="color: rgb(194, 227, 144);">我学汉语</h1>
+                    <h1 style="color: rgb(130, 188, 130);">我学汉语</h1>
                     <h1 style="color: rgb(130, 188, 130);">Wǒ xué hàn yǔ</h1>
-                    
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="img/logo1_1.png" width="250" class="img-fluid">
@@ -61,6 +60,13 @@
     </header>
 
     <div class="container">
+
+        <p></p>
+        <ol class="col-12 breadcrumb light-font" style="background-color: rgb(58, 143, 222);">
+            <li class="breadcrumb-item"><a class="text-white" href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active">Textbook</li>
+        </ol>
+
         <div class="row row-content align-items-center">
             <div class="col-12">
                 <h3>New Practical Chinese Reader</h3>
@@ -73,12 +79,27 @@
                     language function, and related cultural knowledge along with the training of listening,
                     speaking, reading and writing skills.</p>
             </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseText1">Textbook 1</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseText2">Textbook 2</button>
+            </div>
+            
+            <div class="col-12 collapse" id="collapseText1">
+                <p></p>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="./textbook_1_1.html">Lesson 1 - 你 好？ - Nǐ hǎo？ - How do you do?</a></li>
+                    <li class="list-group-item"><a href="#">Lesson 2 - 你 忙 吗？ - Nǐ máng ma ？- Are you busy?</a></li>
+                    <li class="list-group-item"><a href="#">Lesson 3 - 她 是 哪 国 人？ - Tā shì nǎ guó rén ？- Which country does she come from?</a></li>
+                </ul>
+            </div>
 
-            <div class="col-12 col-sm-6 align-self-center media">
-                <a href="./textbook_1_1.html"><img src="img/textbook_c1.png" width="300" class="img-fluid mt-2"></a>
-                <div class="media-boby mt-2">
-                    <a href="/textbook_1_1.html"><h6 class="offset-1">New Practical Chinese Reader 1 [Textbook]</h6></a>
-                </div>
+            <div class="col-12 collapse" id="collapseText2">
+                <p></p>
+                <ul class="list-group">
+                    <li class="list-group-item">First item</li>
+                    <li class="list-group-item">Second item</li>
+                    <li class="list-group-item">Third item</li>
+                </ul>
             </div>
 
 
@@ -96,7 +117,7 @@
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="./aboutus.html">About Us</a></li>
-                        <li><a href="./textbook.html">Textbook</a></li>
+                        <li><a href="#">Textbook</a></li>
                         <li><a href="#">Chinese Character</a></li>
                         <li><a href="./contactus.html">Contact Us</a></li>
                     </ul>
