@@ -83,21 +83,21 @@
         <div class="col-12 collapse" id="collapseLesson">
             <p></p>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson1">Lesson 1</button>
+                data-target="#collapseLesson1" id="btnL1">Lesson 1</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson2">Lesson 2</button>
+                data-target="#collapseLesson2" id="btnL2">Lesson 2</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson3">Lesson 3</button>
+                data-target="#collapseLesson3" id="btnL3">Lesson 3</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson4">Lesson 4</button>
+                data-target="#collapseLesson4" id="btnL4">Lesson 4</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson5">Lesson 5</button>
+                data-target="#collapseLesson5" id="btnL5">Lesson 5</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson6">Lesson 6</button>
+                data-target="#collapseLesson6" id="btnL6">Lesson 6</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson7">Lesson 7</button>
+                data-target="#collapseLesson7" id="btnL7">Lesson 7</button>
             <button class="btn btn-warning mr-auto ml-2 mt-2" type="button" data-toggle="collapse"
-                data-target="#collapseLesson8">Lesson 8</button>
+                data-target="#collapseLesson8" id="btnL8">Lesson 8</button>
 
         </div>
 
@@ -1743,6 +1743,26 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        
+    </script>
+
+    <script>
+        function toggleBtn() {
+            //var test = document.querySelector("#btnL1");
+            if($(this).hasClass("btn-warning")){
+                $(this).removeClass("btn-warning");
+                $(this).addClass("btn-danger");
+            }else if($(this).hasClass("btn-danger")){
+                $(this).removeClass("btn-danger");
+                $(this).addClass("btn-warning");
+            };
+        }
+
+        $("[id^=btnL]").bind("click", toggleBtn);
+        //$("#btnL2").bind("click", toggleBtn);
+            
+            
 
     </script>
 
